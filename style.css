@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    font-family: 'Khula', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16d9e3;
+}
+
+.primary{
+    color: #16d9e3;
+}
+
+.start {
+    font-size: 1.5rem;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.time-list {
+    display: flex;
+    list-style: none;
+}
+
+.time-btn {
+    padding: 10px;
+    background: none;
+    border: 2px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.time-btn:hover {
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 7px rgba(0,0,0,0);
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.circle {
+    background: linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
